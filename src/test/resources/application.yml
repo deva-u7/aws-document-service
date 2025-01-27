@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: document-service
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  s3:
+    region: us-east-1
+    access-key: access-key
+    secret-key: secret-key
+    bucket: test
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8082
